@@ -17,28 +17,28 @@
 <body>
     <!-- Header alanı, içinde logo, navbar ve iletişim bilgileri kısmı var -->
     <header class="header-content">
-        <div class="header-wrapper container">
-            <nav class="nav-content">
-                <a class="logo-content" href="#">Web<span class="logo-span">Studio</span></a>
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a class="nav-item-link" href="./index.html">Studio</a>
+        <div class="header-conteiner conteiner">
+            <nav class="header-navbar">
+                <a class="logo" href="#">Web<span class="header-logo">Studio</span></a>
+                <ul class="header-menu-ul">
+                    <li class="header-menu-list">
+                        <a class="header-list-link" href="./index.html">Studio</a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-item-link" href="">Portfolio</a>
+                    <li class="header-menu-list">
+                        <a class="header-list-link" href="#">Portfolio</a>
                     </li>
-                    <li class="nav-list-item">
-                        <a class="nav-item-link" href="">Contacts</a>
+                    <li class="header-menu-list">
+                        <a class="header-list-link" href="#">Contacts</a>
                     </li>
                 </ul>
             </nav>
             <address class="header-address">
-                <ul class="address-list">
-                    <li class="address-list-item">
-                        <a class="address-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <ul class="header-address-ul">
+                    <li class="header-address-list">
+                        <a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
-                    <li class="address-list-item">
-                        <a class="address-item-link" href="tel:+11(000)111-11-11">+11(000) 111-11-11</a>
+                    <li class="header-address-list">
+                        <a class="header-address-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
@@ -47,129 +47,139 @@
 
     <!-- Main alanı, içinde Our Features ve Our Team alanı var -->
     <main class="hero">
-        <section class="hero-content">
-            <div class="container">
+        <!-- SECTİON HERO İÇERİSİNDE BUTTON VE BAŞLIK VARDIR -->
+        <section class="section-hero">
+            <div class="hero-conteiner conteiner">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button class="hero-btn" type="button">Order Service</button>
             </div>
         </section>
-
-        <section class="advantage">
-            <div class="container">
-                <h2 class="advantage-title visually-hidden">Our Features</h2>
-                <ul class="advantage-list">
-                    <li class="advantage-item">
-                        <h3 class="advantage-item-title">Strategy</h3>
-                        <p class="advantage-item-text">Our goal is to identify the business problem to walk away with the perfect and   creativesolution. </p>
+        <section class="section-second">
+            <!-- SECTİON SECOND İÇERİSİNDE AVANTAJLARIMIZIN YER ALDIĞI KISIM BULUNMAKTADIR -->
+            <h2 class="visually-hidden section-second-title">Advantages</h2>
+            <div class="conteiner section-second-conteiner">
+                <ul class="section-second-ul">
+                    <li class="section-second-list">
+                        <h3 class="subtitle">Strategy</h3>
+                        <p class="text">
+                            Our goal is to identify the business problem to walk away with the perfect and creative solution.
+                        </p>
                     </li>
-                    <li class="advantage-item">
-                        <h3 class="advantage-item-title">Punctuality</h3>
-                        <p class="advantage-item-text">Bring the key message to the brand's audience for the best price within the shortestpossible     time.</p>
+                    <li class="section-second-list">
+                        <h3 class="subtitle">Punctuality</h3>
+                        <p class="text">
+                            Bring the key message to the brand's audience for the best price within the shortest possible time.
+                        </p>
                     </li>
-                    <li class="advantage-item">
-                        <h3 class="advantage-item-title">Diligence</h3>
-                        <p class="advantage-item-text">Research and confirm brands that present the strongest digital growth opportunities andminimize  risk.</p>
+                    <li class="section-second-list">
+                        <h3 class="subtitle">Diligence</h3>
+                        <p class="text">
+                            Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+                        </p>
                     </li>
-                    <li class="advantage-item">
-                        <h3 class="advantage-item-title">Technologies</h3>
-                        <p class="advantage-item-text">Design practice focused on digital experiences. We bring forth a deep passion    forproblem-solving.</p>
+                    <li class="section-second-list">
+                        <h3 class="subtitle">Technologies</h3>
+                        <p class="text">
+                            Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                        </p>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <section class="team">
-            <div class="container">
-                <h2 class="team-title">Our Team</h2>
-                <ul class="team-list">
-                    <li class="team-member">
-                        <img class="team-member-img" src="./images/Mark-Guerrero.jpg" width="264" alt="Mark Guerrero-Product Desinger">
-                        <div class="team-member-info">
-                            <h3 class="team-member-name">Mark Guerrero</h3>
-                            <p class="team-member-role">Product Desinger</p>
+        <section class="section-third">
+            <!-- SECTİON THİRD İÇERİSİNDE TAKIM ÜYELERİ BULUNMAKTADIR. -->
+            <div class="section-third-conteiner conteiner">
+                <h2 class="section-third-title">Our Team</h2>
+                <ul class="section-third-ul">
+                    <li class="section-third-list">
+                        <img src="./images/Mark-Guerrero.jpg" alt="guy with dark and short hair" width="264"/>
+                        <div class="section-third-card-wrap">
+                            <h3 class="subtitle">Mark Guerrero</h3>
+                            <p class="text">Product Designer</p>
                         </div>
                     </li>
-                    <li class="team-member">
-                        <img class="team-member-img" src="./images/Tom-Ford.jpg" width="264" alt="Tom Ford-Frontend Developer">
-                        <div class="team-member-info">
-                            <h3 class="team-member-name">Tom Ford</h3>
-                            <p class="team-member-role">Frontend Developer</p>
+                    <li class="section-third-list">
+                        <img src="./images/Tom-Ford.jpg" alt="guy is smiling" witdh="264"/>
+                        <div class="section-third-card-wrap">
+                            <h3 class="subtitle">Tom Ford</h3>
+                            <p class="text">Frontend Developer</p>
                         </div>
                     </li>
-                    <li class="team-member">
-                        <img class="team-member-img" src="./images/Camila-Garcia.jpg" width="264" alt="Camila Garcia-Marketing">
-                        <div class="team-member-info">
-                            <h3 class="team-member-name">Camila Garcia</h3>
-                            <p class="team-member-role">Marketing</p>
+                    <li class="section-third-list">
+                        <img src="./images/Camila-Garcia.jpg" alt="girl with pink shirt and black hair" width="264"/>
+                        <div class="section-third-card-wrap">
+                            <h3 class="subtitle">Camila Garcia</h3>
+                            <p class="text">Marketing</p>
                         </div>
                     </li>
-                    <li class="team-member">
-                        <img class="team-member-img" src="./images/Daniel-Wilson.jpg" width="264" alt="Daniel Wilson-UI Designer">
-                        <div class="team-member-info">
-                            <h3 class="team-member-name">Daniel Wilson</h3>
-                            <p class="team-member-role">UI Designer</p>
+                    <li class="section-third-list">
+                        <img src="./images/Daniel-Wilson.jpg" alt="guy with gray tshirt" width="264"/>
+                        <div class="section-third-card-wrap">
+                            <h3 class="subtitle">Daniel Wilson</h3>
+                            <p class="text">UI Designer</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        
-        <section class="portfolio">
-            <div class="container">
-                <h2 class="portfolio-title">Our Portfolio</h2>
-                <ul class="portfolio-list">
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Banking-App.jpg" width="360" alt="Banking App">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Banking App</h3>
-                            <p class="portfolio-category">App</p>
+        <section class="section-fourth">
+            <!-- SECTİON FOURTH İÇERİSİNDE PORTFOLİOMUZ BULUNMAKTADIR. -->
+            <div class="section-fourth-conteiner conteiner">
+                <h2 class="section-fourth-title">Our Portfolio</h2>
+                <ul class="section-fourth-ul">
+                    <li class="section-fourth-list">
+                        <img src="./images/Banking-App.jpg" alt="banking application with purple theme" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Banking App</h3>
+                            <p class="text">App</p>
                         </div>
                     </li>
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Cashless-Payment.jpg" width="360" alt="Cashless Payment">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Cashless Payment</h3>
-                            <p class="portfolio-category">Marketing</p>
+                    <li class="section-fourth-list">
+                        <img src="./images/Cashless-Payment.jpg" alt="application is working with qr code" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Cashless Payment</h3>
+                            <p class="text">Marketing</p>
                         </div>
                     </li>
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Meditation-App.jpg" width="360" alt="Meditation App">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Meditation App</h3>
-                            <p class="portfolio-category">App</p>
+                    <li class="section-fourth-list">
+                        <img src="./images/Meditation-App.jpg" alt="computer and phone has same application with colorfull theme" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Meditation App</h3>
+                            <p class="text">App</p>
                         </div>
                     </li>
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Taxi-Service.jpg" width="360" alt="Taxi Service">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Taxi Service</h3>
-                            <p class="portfolio-category">Marketing</p>
+                    <li class="section-fourth-list">
+                        <img src="./images/Taxi-Service.jpg" alt="taxi driver is looking application" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Taxi Service</h3>
+                            <p class="text">Marketing</p>
                         </div>
                     </li>
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Screen-Illustrations.jpg" width="360" alt="Screen Illustrations">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Screen Illustrations</h3>
-                            <p class="portfolio-category">Design</p>
+                    <li class="section-fourth-list">
+                        <img src="./images/Screen-Illustrations.jpg" alt="there is moon on the application with good design" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Screen Illustrations</h3>
+                            <p class="text">Design</p>
                         </div>
                     </li>
-                    <li class="portfolio-card">
-                        <img class="portfolio-img" src="./images/Online-Courses.jpg" width="360" alt="Online Courses">
-                        <div class="portfolio-card-wrapper">
-                            <h3 class="portfolio-card-title">Online Courses</h3>
-                            <p class="portfolio-category">Marketing</p>
+                    <li class="section-fourth-list">
+                        <img src="./images/Online-Courses.jpg" alt="girl is smiling, wearing orange shirt and looking phone" width="360"/>
+                        <div class="section-fourth-card-wrap">
+                            <h3 class="subtitle">Online Courses</h3>
+                            <p class="text">Marketing</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-
     <!-- Footer alanı, içinde alt bilgiler var -->
-    <footer class="footer-container">
-        <div class="container">
-            <a class="logo-content footer-logo" href="#">Web<span class="logo-footer-span">Studio</span></a>
-            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    <footer class="footer-content">
+        <div class="footer-conteiner conteiner">
+            <a class="logo" href="#">Web<span class="footer-logo">Studio</span></a>
+            <p class="text">
+                Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+            </p>
         </div>
     </footer>
 </body>

@@ -20,39 +20,46 @@ body{
     font-family: var(--font-family);
     color: var(--slate);
     background-color: var(--white);
+    color:var(--slate);
 }
 
-/* ----- Genel Class Stilleri ----- */
-
-.container{
-    width: 1158px;
+/* ---------Genel Class Stilleri --------- */
+.conteiner{
+    width:1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 section{
-    padding: 120px 0;
+    padding:120px 0px;
 }
 
 .visually-hidden {
-    display:none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     }
+li{
+    list-style-type:none;
+}
 
-    li{
-        list-style-type:none;
-    }
-
-/* -----P'ler için ortak stiller ----- */
-.address-item-link, .advantage-item-text, .team-member-role, .portfolio-category{
+/* --------- Tüm Textler için Ortak Stiller --------- */
+.text{
     font-family: var(--font-family);
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
 }
-
-/* ----- H2ler için ortak stiller ------ */
-.team-title, .portfolio-title{
+/* --------- Tüm H2ler için Ortak Stiller --------- */
+.section-second-title, .section-third-title,.section-fourth-title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 36px;
@@ -61,12 +68,10 @@ section{
     text-align: center;
     text-transform: capitalize;
     color: var(--navy-blue);
-    margin-bottom: 72px;
+    margin-bottom:72px;
 }
-
-/* ----- H3 ler için ortak stiller ----- */
-
-.advantage-item-title, .team-member-name, .portfolio-card-title{
+/* --------- Tüm H3ler için Ortak Stiller --------- */
+.subtitle{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 20px;
@@ -75,25 +80,54 @@ section{
     color: var(--navy-blue);
     margin-bottom: 8px;
 }
-
-
-/* ---------- HEADER ALANI ------------- */
-
+/* --------- HEADER KISMI Stiller --------- */
 .header-content{
     border-bottom: 1px solid var(--cornflower);
 }
-
-.header-wrapper{
-    display: flex;
+.header-conteiner{
+    display:flex;
     justify-content: space-between;
 }
-
-.nav-content{
+.header-navbar{
     display: flex;
-    align-items: center;
+    gap:40px;
+    align-items:center;
 }
-
-.logo-content{
+.header-menu-ul{
+    display:flex;
+    align-items:center;
+}
+.header-address-ul{
+    display:flex;
+    align-items:center;
+}
+.header-menu-list{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    padding:40px;
+}
+.header-address-list{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    padding:40px;
+}
+.header-list-link:hover,
+.header-list-link:active,
+.header-list-link:focus,
+.header-address-link:hover,
+.header-address-link:focus,
+.header-address-link:active{
+    color: var(--ocean);
+}
+.logo{
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 18px;
@@ -101,59 +135,15 @@ section{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
-    margin-right: 76px;
 }
-
-.logo-span{
-    color: var(--navy-blue);
+.header-logo{
+    color:var(--navy-blue);
 }
-
-.nav-list{
-    display: flex;
-    gap: 40px;
+/* --------- MAIN KISMI Stiller --------- */
+.section-hero{
+    background-color: var(--navy-blue);
 }
-
-.nav-list-item{
-    padding: 24px 0;
-}
-
-.nav-item-link{
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    padding: 24px 0;
-}
-
-
-.nav-item-link:hover,
-.nav-item-link:active,
-.address-item-link:hover,
-.address-item-link:focus,
-.nav-item-link:focus
-{
-    color: var(--ocean);
-}
-
-.header-address{
-    display: flex;
-    align-items: center;
-}
-
-.address-list{
-    display: flex;
-    gap: 40px;
-}
-
-/* ----------- MAİN/HERO ALNI --------------- */
-
-.hero-content{
-    background: var(--navy-blue);
-    padding: 188px 0;
-}
-
+/* HERO SECTİON KISMI STİLLER */
 .hero-title{
     font-family: var(--font-family);
     font-weight: 700;
@@ -162,105 +152,100 @@ section{
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    max-width: 496px;
-    margin: 0 auto;
+    max-width:496px;
 }
-
-.hero-button{
-    background: var(--iris);
+.hero-btn{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.04em;
     color: var(--white);
+    background-color: var(--iris);
+    cursor: pointer;
     display: block;
-    margin: 48px auto 0;
-    border: none;
-    border-radius: 4px;
-    padding: 16px 32px;
     min-width: 169px;
     height: 56px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-button:hover,
-.hero-button:focus{
-    background-color: var(--ocean);
-}
-
-.advantage-list{
-    background-color: var(--white);
+.hero-conteiner {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    gap: 10px;
 }
-
-.advantage-item{
-    width: calc((100% - 72px) / 4);
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
 }
-/* --------------- OUR TEAM ALANI --------------- */
-
-.team{
-    background: var(--cloud);
+/* SECTİON SECOND KISMI STİLLER */
+.section-second-conteiner{
+    display:flex;
+    justify-content: center;
 }
-
-.team-list{
-    display: flex;
-    gap: 24px;
+.section-second-ul{
+    display:flex;
+    gap:24px;
+    color:var(--white);
 }
-
-.team-member{
-    background: var(--white);
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px
+.section-second-list{
+    width: calc((100% - 72px)/4);
+    max-width: 264px;
 }
-
-.team-member-info{
+/* SECTİON THİRD KISMI STİLLER */
+.section-third{
+    background-color:var(--cloud);
+}
+.section-third-ul{
+    display:flex;
+    gap:24px;
+}
+.section-third-list{
+    width: calc((100% - 72px)/4);
+    max-width:264px;
+    background-color:var(--white);      
+    border-radius: 0 0 4px 4px;
+}
+.section-third-card-wrap{
     padding: 32px 0;
-    text-align: center;
+    text-align: center; 
 }
-
-/* ------------- OUR PORTFOLİO ALANI ---------------- */
-
-.portfolio-list{
-    background: var(--white);
-    display: flex;
+/* SECTİON FOURTH KISMI STİLLER */
+.section-fourth-ul{
+    background-color:var(--white);
+    display:flex;
+    gap:24px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
-
-.portfolio-card{
-    width: calc((100% - 48px) / 3);
+.section-fourth-list{
+    width: calc((100% - 48px)/3);
 }
-
-.portfolio-card-wrapper{
+.section-fourth-card-wrap{
     border: 1px solid var(--cornflower);
     border-top: none;
     padding: 32px 16px;
     margin-bottom: 8px;
 }
-/* --------------- FOOTER ALANI ----------------- */
-
-footer{
-    background: var(--navy-blue);
+/* FOOTER KISMI BURADA */
+.footer-content{
+    background-color:var(--navy-blue);
     padding: 100px 0;
 }
-
-.footer-logo{
-    display: inline-block;
+.footer-content .logo{
     margin-bottom: 16px;
+    display:inline-block;
 }
-
-.footer-text{
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.02em;
-    color: var(--cloud);
-    max-width: 264px;
+.footer-logo{
+    color:var(--cloud);
 }
-
-.logo-footer-span{
-    color: var(--cloud);
+.footer-content .text{
+    color:var(--cloud);
+    max-width:264px;
 }
